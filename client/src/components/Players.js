@@ -16,4 +16,4 @@ const Players = props => {
     )
 }
 
-export default Players 
+export default Players  
