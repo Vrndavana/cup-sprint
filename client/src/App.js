@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import axios from 'axios';
 import Players from './components/Players';
-// import Navbar from './components/Navbar';
+
 // import { response } from 'express';
 
-
+import Navbar from './components/Navbar';
 
 
 class App extends React.Component{
@@ -30,6 +30,9 @@ class App extends React.Component{
   render () {
   return (
     <div className="App">
+    
+        <Navbar/>
+          <h1>World Cup Women!</h1>
         <Players players={this.state.players}/>
     </div>
   );
